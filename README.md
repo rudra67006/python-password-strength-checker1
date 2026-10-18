@@ -34,7 +34,7 @@ The Password Strength Checker is a beginner-friendly cybersecurity project that 
 Replace the example URL below with your actual GitHub repository URL.
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/password-strength-checker.git
+git clone [https://github.com/rudra67006/python-password-strength-checker1]
 ```
 
 ### 2. Open the Project Folder
@@ -77,4 +77,4 @@ The checker evaluates five basic requirements:
 
 ## GitHub Repository
 
-**Repository URL:** Replace this line with your actual GitHub repository link.
+**Repository URL:** (https://github.com/rudra67006/python-password-strength-checker1)
