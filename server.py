@@ -3,6 +3,7 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import parse_qs
 from html import escape
 from pathlib import Path
+import os
 
 # Locate the project folders
 BASE_DIR = Path(__file__).resolve().parent
@@ -117,8 +118,10 @@ class PasswordChecker(BaseHTTPRequestHandler):
         self.wfile.write(encoded)
 
 
-server = HTTPServer(("127.0.0.1", 8000), PasswordChecker)
+host = "0.0.0.0"
+port = int(os.environ.get("PORT", 8000))
 
+server = HTTPServer((host, port), PhishingHandler)
 print("Password Strength Checker is running!")
 print("Open http://localhost:8000 in Chrome")
 
