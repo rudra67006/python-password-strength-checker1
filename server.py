@@ -122,7 +122,7 @@ host = "0.0.0.0"
 port = int(os.environ.get("PORT", 8000))
 
 server = HTTPServer((host, port), PhishingHandler)
-print("Password Strength Checker is running!")
+print("PhishGuard is running!")
 print("Open http://localhost:8000 in Chrome")
 
 server.serve_forever()
